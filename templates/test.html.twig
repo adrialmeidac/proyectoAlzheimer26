@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Test orientativo{% endblock %}
+
+{% block content %}
+<h2>Test orientativo de memoria</h2>
+<h3>Evaluación de CI</h3>
+<p>Este test NO sustituye una evaluación médica profesional.</p>
+<p>Recibirás 25 preguntas con dificultad creciente, selecciona la respuesta correcta entre 6 opciones.</p>
+<p>Puedes saltar preguntas y regresar más tarde</p>
+<p>Instrucciones de evaluación:</p>
+<p>Si aciertas entre 1 y 4 tienes un alto riesgo </p>
+<p>Si aciertas entre 9 y 12 solo tienes algunas señales de advertencia.</p>
+<p>Si aciertas entre 21 y 25 tienes una excelente salud cerebral.</p>
+<p>Comencemos</p>
+<button>Hombre</button>
+<button>Mujer</button>
+<form method="post">
+    <label>¿Olvidas citas o eventos importantes?</label><br>
+    <input type="radio" name="p1" value="si"> Sí
+    <input type="radio" name="p1" value="no"> No
+    <br><br>
+
+    <label>¿Tienes dificultad para encontrar palabras comunes?</label><br>
+    <input type="radio" name="p2" value="si"> Sí
+    <input type="radio" name="p2" value="no"> No
+    <br><br>
+
+    <button type="submit">Enviar</button>
+</form>
+{% endblock %}

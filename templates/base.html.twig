@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Proyecto Alzheimer{% endblock %}</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Proyecto Alzheimer</h1>
+    <nav>
+        <a href="/index.php">Inicio</a>
+        <a href="/actividades.php">Actividades</a>
+        <a href="/test.php">Test</a>       
+        <a href="/foro.php">Foro</a>
+    </nav>
+</header>
+
+<main>
+    {% block content %}{% endblock %}
+</main>
+
+<footer>
+    <p>© 2026 Proyecto Alzheimer</p>
+</footer>
+
+</body>
+</html>
